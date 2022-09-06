@@ -1,0 +1,27 @@
+---
+id: communication-send-email-recovery-pass
+sidebar_label: Communication Send Email Recovery Pass
+hide_title: true
+hide_table_of_contents: true
+api: {"tags":["Communication"],"operationId":"CommunicationSendEmailRecoveryPass","deprecated":false,"parameters":[{"name":"Authorization","in":"header","required":false,"schema":{"type":"string","default":"Bearer {token}"}}],"requestBody":{"content":{"application/json":{"schema":{"title":"CommunicationSendEmailRecoveryPassRequest","example":{"codigo":"005","name":"Elias","subject":"Recuperar Contraseña","to":"eamanriquez@gmail.com","text":"Su nueva Contraseña es : "},"type":"object","properties":{"codigo":{"type":"string"},"name":{"type":"string"},"subject":{"type":"string"},"to":{"type":"string"},"text":{"type":"string"}},"required":["codigo","name","subject","to","text"]}}},"required":true},"responses":{"200":{"description":"","headers":{}}},"description":"Communication Send Email Recovery Pass","method":"post","path":"/api/mail/recoverypass","servers":[{"url":"http://localhost:8085/api/cards/update"}],"jsonRequestBodyExample":{"codigo":"005","name":"Elias","subject":"Recuperar Contraseña","to":"eamanriquez@gmail.com","text":"Su nueva Contraseña es : "},"info":{"version":"1.0","title":"U-Pay AMOL","contact":{}},"postman":{"name":"Communication Send Email Recovery Pass","description":{"type":"text/plain"},"url":{"path":["api","mail","recoverypass"],"host":["{{baseUrl}}"],"query":[],"variable":[]},"header":[{"key":"Content-Type","value":"application/json"}],"method":"POST","body":{"mode":"raw","raw":"\"\"","options":{"raw":{"language":"json"}}}}}
+sidebar_class_name: "post api-method"
+info_path: petstore_versioned/u-pay-amol
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem"
+import SchemaTabs from "@theme/SchemaTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import TabItem from "@theme/TabItem";
+
+## Communication Send Email Recovery Pass
+
+
+
+Communication Send Email Recovery Pass
+
+<details style={{"marginBottom":"1rem"}} data-collapsed={false} open={true}><summary style={{}}><strong>Header Parameters</strong></summary><div><ul><ParamsItem className={"paramsItem"} param={{"name":"Authorization","in":"header","required":false,"schema":{"type":"string","default":"Bearer {token}"}}}></ParamsItem></ul></div></details><MimeTabs><TabItem label={"application/json"} value={"application/json-schema"}><details style={{}} data-collapsed={false} open={true}><summary style={{"textAlign":"left"}}><strong>Request Body</strong><strong style={{"fontSize":"var(--ifm-code-font-size)","color":"var(--openapi-required)"}}> required</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><SchemaItem collapsible={false} name={"codigo"} required={true} schemaDescription={undefined} schemaName={"string"} qualifierMessage={undefined} defaultValue={undefined}></SchemaItem><SchemaItem collapsible={false} name={"name"} required={true} schemaDescription={undefined} schemaName={"string"} qualifierMessage={undefined} defaultValue={undefined}></SchemaItem><SchemaItem collapsible={false} name={"subject"} required={true} schemaDescription={undefined} schemaName={"string"} qualifierMessage={undefined} defaultValue={undefined}></SchemaItem><SchemaItem collapsible={false} name={"to"} required={true} schemaDescription={undefined} schemaName={"string"} qualifierMessage={undefined} defaultValue={undefined}></SchemaItem><SchemaItem collapsible={false} name={"text"} required={true} schemaDescription={undefined} schemaName={"string"} qualifierMessage={undefined} defaultValue={undefined}></SchemaItem></ul></details></TabItem></MimeTabs><div><ApiTabs><TabItem label={"200"} value={"200"}><div></div><details style={{"textAlign":"left","marginBottom":"1rem"}} data-collaposed={true} open={false}><summary style={{}}><strong>Response Headers</strong></summary><ul style={{"marginLeft":"1rem"}}></ul></details><div></div></TabItem></ApiTabs></div>
+      

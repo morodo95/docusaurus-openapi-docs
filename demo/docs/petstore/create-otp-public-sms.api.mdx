@@ -1,0 +1,27 @@
+---
+id: create-otp-public-sms
+sidebar_label: Create OTP Public SMS
+hide_title: true
+hide_table_of_contents: true
+api: {"tags":["OTP"],"operationId":"CreateOTPPublicSMS","deprecated":false,"parameters":[{"name":"Authorization","in":"header","required":false,"schema":{"type":"string","default":"Bearer {token}"}}],"requestBody":{"content":{"application/json":{"schema":{"title":"CreateOTPPublicSMSRequest","example":{"document_number":"20858571","birthdate":"2001-11-23","telephone":"+56996415350","method":"sms"},"type":"object","properties":{"document_number":{"type":"string"},"birthdate":{"type":"string"},"telephone":{"type":"string"},"method":{"type":"string"}},"required":["document_number","birthdate","telephone","method"]}}},"required":true},"responses":{"200":{"description":"","headers":{}}},"description":"Create OTP Public SMS","method":"post","path":"/api/otp/public/create","servers":[{"url":"http://localhost:8085/api/cards/update"}],"jsonRequestBodyExample":{"document_number":"20858571","birthdate":"2001-11-23","telephone":"+56996415350","method":"sms"},"info":{"version":"1.0","title":"U-Pay AMOL","contact":{}},"postman":{"name":"Create OTP Public SMS","description":{"type":"text/plain"},"url":{"path":["api","otp","public","create"],"host":["{{baseUrl}}"],"query":[],"variable":[]},"header":[{"key":"Content-Type","value":"application/json"}],"method":"POST","body":{"mode":"raw","raw":"\"\"","options":{"raw":{"language":"json"}}}}}
+sidebar_class_name: "post api-method"
+info_path: petstore/u-pay-amol
+custom_edit_url: "https://github.com/PaloAltoNetworks/docusaurus-openapi-docs/issues/new?labels=documentation&template=documentation_problem.md&title=[Documentation] Requesting changes to 'Create OTP Public SMS' (create-otp-public-sms)"
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem"
+import SchemaTabs from "@theme/SchemaTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import TabItem from "@theme/TabItem";
+
+## Create OTP Public SMS
+
+
+
+Create OTP Public SMS
+
+<details style={{"marginBottom":"1rem"}} data-collapsed={false} open={true}><summary style={{}}><strong>Header Parameters</strong></summary><div><ul><ParamsItem className={"paramsItem"} param={{"name":"Authorization","in":"header","required":false,"schema":{"type":"string","default":"Bearer {token}"}}}></ParamsItem></ul></div></details><MimeTabs><TabItem label={"application/json"} value={"application/json-schema"}><details style={{}} data-collapsed={false} open={true}><summary style={{"textAlign":"left"}}><strong>Request Body</strong><strong style={{"fontSize":"var(--ifm-code-font-size)","color":"var(--openapi-required)"}}> required</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><SchemaItem collapsible={false} name={"document_number"} required={true} schemaDescription={undefined} schemaName={"string"} qualifierMessage={undefined} defaultValue={undefined}></SchemaItem><SchemaItem collapsible={false} name={"birthdate"} required={true} schemaDescription={undefined} schemaName={"string"} qualifierMessage={undefined} defaultValue={undefined}></SchemaItem><SchemaItem collapsible={false} name={"telephone"} required={true} schemaDescription={undefined} schemaName={"string"} qualifierMessage={undefined} defaultValue={undefined}></SchemaItem><SchemaItem collapsible={false} name={"method"} required={true} schemaDescription={undefined} schemaName={"string"} qualifierMessage={undefined} defaultValue={undefined}></SchemaItem></ul></details></TabItem></MimeTabs><div><ApiTabs><TabItem label={"200"} value={"200"}><div></div><details style={{"textAlign":"left","marginBottom":"1rem"}} data-collaposed={true} open={false}><summary style={{}}><strong>Response Headers</strong></summary><ul style={{"marginLeft":"1rem"}}></ul></details><div></div></TabItem></ApiTabs></div>

@@ -1,0 +1,27 @@
+---
+id: recovery-pin
+sidebar_label: Recovery Pin
+hide_title: true
+hide_table_of_contents: true
+api: {"tags":["Login"],"operationId":"RecoveryPin","deprecated":false,"parameters":[{"name":"Authorization","in":"header","required":false,"schema":{"type":"string","default":"Bearer {token}"}}],"requestBody":{"content":{"application/json":{"schema":{"example":"{\n    \"param\":\"01227b4d23162956c01888996aaee8db:7bb127d7cab5b54038a80c0b58d30661db6b2d6fc72523dfeaac20f8f54353335d668e157200344748d63f5564de0d32d938459b6871d4c142755b9130574e65b1332877a5e61b77bd664110aed77edbcf5fadd9348b50aed59e2e84a1fa4fb6e19400f7c78c78341776e05d45b2d8fc483a41d1d3e0f771f3db2dc11bdca4b2\"\n}\n\n/*\n{\n    \"document_number\":\"14.124.821\",\n    \"document_dv\":\"9\",\n    \"birthdate\":\"1981-01-19\",\n    \"pin\" : 7895,\n    \"pinnew\" : 1234,\n    \"pinnewre\" : 1234\n}\n*/","type":"string"}}},"required":true},"responses":{"200":{"description":"","headers":{}}},"description":"Recovery Pin","method":"put","path":"/api/user/pass/update","servers":[{"url":"http://localhost:8085/api/cards/update"}],"jsonRequestBodyExample":"{\n    \"param\":\"01227b4d23162956c01888996aaee8db:7bb127d7cab5b54038a80c0b58d30661db6b2d6fc72523dfeaac20f8f54353335d668e157200344748d63f5564de0d32d938459b6871d4c142755b9130574e65b1332877a5e61b77bd664110aed77edbcf5fadd9348b50aed59e2e84a1fa4fb6e19400f7c78c78341776e05d45b2d8fc483a41d1d3e0f771f3db2dc11bdca4b2\"\n}\n\n/*\n{\n    \"document_number\":\"14.124.821\",\n    \"document_dv\":\"9\",\n    \"birthdate\":\"1981-01-19\",\n    \"pin\" : 7895,\n    \"pinnew\" : 1234,\n    \"pinnewre\" : 1234\n}\n*/","info":{"version":"1.0","title":"U-Pay AMOL","contact":{}},"postman":{"name":"Recovery Pin","description":{"type":"text/plain"},"url":{"path":["api","user","pass","update"],"host":["{{baseUrl}}"],"query":[],"variable":[]},"header":[{"key":"Content-Type","value":"application/json"}],"method":"PUT","body":{"mode":"raw","raw":"\"\"","options":{"raw":{"language":"json"}}}}}
+sidebar_class_name: "put api-method"
+info_path: petstore_versioned/u-pay-amol
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem"
+import SchemaTabs from "@theme/SchemaTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import TabItem from "@theme/TabItem";
+
+## Recovery Pin
+
+
+
+Recovery Pin
+
+<details style={{"marginBottom":"1rem"}} data-collapsed={false} open={true}><summary style={{}}><strong>Header Parameters</strong></summary><div><ul><ParamsItem className={"paramsItem"} param={{"name":"Authorization","in":"header","required":false,"schema":{"type":"string","default":"Bearer {token}"}}}></ParamsItem></ul></div></details><MimeTabs><TabItem label={"application/json"} value={"application/json-schema"}><details style={{}} data-collapsed={false} open={true}><summary style={{"textAlign":"left"}}><strong>Request Body</strong><strong style={{"fontSize":"var(--ifm-code-font-size)","color":"var(--openapi-required)"}}> required</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><li><div><strong>string</strong></div></li></ul></details></TabItem></MimeTabs><div><ApiTabs><TabItem label={"200"} value={"200"}><div></div><details style={{"textAlign":"left","marginBottom":"1rem"}} data-collaposed={true} open={false}><summary style={{}}><strong>Response Headers</strong></summary><ul style={{"marginLeft":"1rem"}}></ul></details><div></div></TabItem></ApiTabs></div>
+      

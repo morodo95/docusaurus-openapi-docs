@@ -1,0 +1,27 @@
+---
+id: update-cardholder-status
+sidebar_label: Update Cardholder Status
+hide_title: true
+hide_table_of_contents: true
+api: {"tags":["Cards"],"operationId":"UpdateCardholderStatus","deprecated":false,"parameters":[{"name":"Authorization","in":"header","required":true,"description":"","schema":{"type":"string"}}],"requestBody":{"content":{"application/json":{"schema":{"title":"UpdateCardholderStatusRequest","example":{"card_token":"","card_holder":"","color":"","card_type":"","card_select":1,"card_brand":"","is_oneclick":0,"card_status":"","card_entity":"","card_product":""},"type":"object","properties":{"card_token":{"type":"string"},"card_holder":{"type":"string"},"color":{"type":"string"},"card_type":{"type":"string"},"card_select":{"type":"integer","format":"int32"},"card_brand":{"type":"string"},"is_oneclick":{"type":"integer","format":"int32"},"card_status":{"type":"string"},"card_entity":{"type":"string"},"card_product":{"type":"string"}},"required":["card_token","card_holder","color","card_type","card_select","card_brand","is_oneclick","card_status","card_entity","card_product"]}}},"required":true},"responses":{"200":{"description":"","headers":{}}},"security":[],"description":"Update Cardholder Status","method":"put","path":"/api/cardholder/update","servers":[{"url":"http://localhost:8085/api/cards/update"}],"jsonRequestBodyExample":{"card_token":"","card_holder":"","color":"","card_type":"","card_select":1,"card_brand":"","is_oneclick":0,"card_status":"","card_entity":"","card_product":""},"info":{"version":"1.0","title":"U-Pay AMOL","contact":{}},"postman":{"name":"Update Cardholder Status","description":{"type":"text/plain"},"url":{"path":["api","cardholder","update"],"host":["{{baseUrl}}"],"query":[],"variable":[]},"header":[{"key":"Content-Type","value":"application/json"}],"method":"PUT","body":{"mode":"raw","raw":"\"\"","options":{"raw":{"language":"json"}}}}}
+sidebar_class_name: "put api-method"
+info_path: petstore_versioned/u-pay-amol
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem"
+import SchemaTabs from "@theme/SchemaTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import TabItem from "@theme/TabItem";
+
+## Update Cardholder Status
+
+
+
+Update Cardholder Status
+
+<details style={{"marginBottom":"1rem"}} data-collapsed={false} open={true}><summary style={{}}><strong>Header Parameters</strong></summary><div><ul><ParamsItem className={"paramsItem"} param={{"name":"Authorization","in":"header","required":true,"description":"","schema":{"type":"string"}}}></ParamsItem></ul></div></details><MimeTabs><TabItem label={"application/json"} value={"application/json-schema"}><details style={{}} data-collapsed={false} open={true}><summary style={{"textAlign":"left"}}><strong>Request Body</strong><strong style={{"fontSize":"var(--ifm-code-font-size)","color":"var(--openapi-required)"}}> required</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><SchemaItem collapsible={false} name={"card_token"} required={true} schemaDescription={undefined} schemaName={"string"} qualifierMessage={undefined} defaultValue={undefined}></SchemaItem><SchemaItem collapsible={false} name={"card_holder"} required={true} schemaDescription={undefined} schemaName={"string"} qualifierMessage={undefined} defaultValue={undefined}></SchemaItem><SchemaItem collapsible={false} name={"color"} required={true} schemaDescription={undefined} schemaName={"string"} qualifierMessage={undefined} defaultValue={undefined}></SchemaItem><SchemaItem collapsible={false} name={"card_type"} required={true} schemaDescription={undefined} schemaName={"string"} qualifierMessage={undefined} defaultValue={undefined}></SchemaItem><SchemaItem collapsible={false} name={"card_select"} required={true} schemaDescription={undefined} schemaName={"int32"} qualifierMessage={undefined} defaultValue={undefined}></SchemaItem><SchemaItem collapsible={false} name={"card_brand"} required={true} schemaDescription={undefined} schemaName={"string"} qualifierMessage={undefined} defaultValue={undefined}></SchemaItem><SchemaItem collapsible={false} name={"is_oneclick"} required={true} schemaDescription={undefined} schemaName={"int32"} qualifierMessage={undefined} defaultValue={undefined}></SchemaItem><SchemaItem collapsible={false} name={"card_status"} required={true} schemaDescription={undefined} schemaName={"string"} qualifierMessage={undefined} defaultValue={undefined}></SchemaItem><SchemaItem collapsible={false} name={"card_entity"} required={true} schemaDescription={undefined} schemaName={"string"} qualifierMessage={undefined} defaultValue={undefined}></SchemaItem><SchemaItem collapsible={false} name={"card_product"} required={true} schemaDescription={undefined} schemaName={"string"} qualifierMessage={undefined} defaultValue={undefined}></SchemaItem></ul></details></TabItem></MimeTabs><div><ApiTabs><TabItem label={"200"} value={"200"}><div></div><details style={{"textAlign":"left","marginBottom":"1rem"}} data-collaposed={true} open={false}><summary style={{}}><strong>Response Headers</strong></summary><ul style={{"marginLeft":"1rem"}}></ul></details><div></div></TabItem></ApiTabs></div>
+      

@@ -1,0 +1,27 @@
+---
+id: card-holder-get-pagos
+sidebar_label: CardHolder Get Pagos
+hide_title: true
+hide_table_of_contents: true
+api: {"tags":["CardHolder"],"operationId":"CardHolderGetPagos","deprecated":false,"parameters":[{"name":"Authorization","in":"header","required":true,"description":"","schema":{"type":"string"}}],"requestBody":{"content":{"application/json":{"schema":{"title":"CardHolderGetPagosRequest","example":{"param":"a0653d29147132e983711e674b277ab8:18a53eb718443325a791db8ba8bce566cc36e177f80c189d59255e3fad15446796ad31875cde62c78d547ad21b0faced363fb96551a154a03cbb511d6f101ff3"},"type":"object","properties":{"param":{"type":"string"}},"required":["param"]}}},"required":true},"responses":{"200":{"description":"","headers":{}}},"security":[],"description":"CardHolder Get Pagos","method":"post","path":"/api/transaction/credit","servers":[{"url":"http://localhost:8085/api/cards/update"}],"jsonRequestBodyExample":{"param":"a0653d29147132e983711e674b277ab8:18a53eb718443325a791db8ba8bce566cc36e177f80c189d59255e3fad15446796ad31875cde62c78d547ad21b0faced363fb96551a154a03cbb511d6f101ff3"},"info":{"version":"1.0","title":"U-Pay AMOL","contact":{}},"postman":{"name":"CardHolder Get Pagos","description":{"type":"text/plain"},"url":{"path":["api","transaction","credit"],"host":["{{baseUrl}}"],"query":[],"variable":[]},"header":[{"key":"Content-Type","value":"application/json"}],"method":"POST","body":{"mode":"raw","raw":"\"\"","options":{"raw":{"language":"json"}}}}}
+sidebar_class_name: "post api-method"
+info_path: petstore/u-pay-amol
+custom_edit_url: "https://github.com/PaloAltoNetworks/docusaurus-openapi-docs/issues/new?labels=documentation&template=documentation_problem.md&title=[Documentation] Requesting changes to 'CardHolder Get Pagos' (card-holder-get-pagos)"
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem"
+import SchemaTabs from "@theme/SchemaTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import TabItem from "@theme/TabItem";
+
+## CardHolder Get Pagos
+
+
+
+CardHolder Get Pagos
+
+<details style={{"marginBottom":"1rem"}} data-collapsed={false} open={true}><summary style={{}}><strong>Header Parameters</strong></summary><div><ul><ParamsItem className={"paramsItem"} param={{"name":"Authorization","in":"header","required":true,"description":"","schema":{"type":"string"}}}></ParamsItem></ul></div></details><MimeTabs><TabItem label={"application/json"} value={"application/json-schema"}><details style={{}} data-collapsed={false} open={true}><summary style={{"textAlign":"left"}}><strong>Request Body</strong><strong style={{"fontSize":"var(--ifm-code-font-size)","color":"var(--openapi-required)"}}> required</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><SchemaItem collapsible={false} name={"param"} required={true} schemaDescription={undefined} schemaName={"string"} qualifierMessage={undefined} defaultValue={undefined}></SchemaItem></ul></details></TabItem></MimeTabs><div><ApiTabs><TabItem label={"200"} value={"200"}><div></div><details style={{"textAlign":"left","marginBottom":"1rem"}} data-collaposed={true} open={false}><summary style={{}}><strong>Response Headers</strong></summary><ul style={{"marginLeft":"1rem"}}></ul></details><div></div></TabItem></ApiTabs></div>

@@ -211,21 +211,6 @@ const config = {
             },
             template: "api.mustache", // Customize API MDX with mustache template
           },
-          cos: {
-            specPath: "examples/openapi-cos.json",
-            outputDir: "docs/cos",
-            sidebarOptions: {
-              groupPathsBy: "tag",
-            },
-          },
-          burgers: {
-            specPath: "examples/food/burgers/openapi.yaml",
-            outputDir: "docs/food/burgers",
-          },
-          yogurt: {
-            specPath: "examples/food/yogurtstore/openapi.yaml",
-            outputDir: "docs/food/yogurtstore",
-          },
         },
       },
     ],

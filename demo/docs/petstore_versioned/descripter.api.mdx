@@ -1,0 +1,27 @@
+---
+id: descripter
+sidebar_label: Descripter
+hide_title: true
+hide_table_of_contents: true
+api: {"tags":["Security"],"operationId":"Descripter","deprecated":false,"parameters":[{"name":"Authorization","in":"header","required":false,"schema":{"type":"string","default":"Bearer {token}"}}],"requestBody":{"content":{"application/json":{"schema":{"title":"DescripterRequest","example":{"data":"9889c78f5a2d5ae160883e41df377d9e:fa01f6a5c9a8bcfd159dba6a34f3818a8c5d9221e2ea79751a6aef06440cc238077d938f305191e9cd139da356b724e3e9c01a723268a3a3cd6b1d2cd95ae7e4b31e275c22f4455114f763315d52efc8"},"type":"object","properties":{"data":{"type":"string"}},"required":["data"]}}},"required":true},"responses":{"200":{"description":"","headers":{}}},"description":"Descripter","method":"post","path":"/api/segurity/descripter","servers":[{"url":"http://localhost:8085/api/cards/update"}],"jsonRequestBodyExample":{"data":"9889c78f5a2d5ae160883e41df377d9e:fa01f6a5c9a8bcfd159dba6a34f3818a8c5d9221e2ea79751a6aef06440cc238077d938f305191e9cd139da356b724e3e9c01a723268a3a3cd6b1d2cd95ae7e4b31e275c22f4455114f763315d52efc8"},"info":{"version":"1.0","title":"U-Pay AMOL","contact":{}},"postman":{"name":"Descripter","description":{"type":"text/plain"},"url":{"path":["api","segurity","descripter"],"host":["{{baseUrl}}"],"query":[],"variable":[]},"header":[{"key":"Content-Type","value":"application/json"}],"method":"POST","body":{"mode":"raw","raw":"\"\"","options":{"raw":{"language":"json"}}}}}
+sidebar_class_name: "post api-method"
+info_path: petstore_versioned/u-pay-amol
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem"
+import SchemaTabs from "@theme/SchemaTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import TabItem from "@theme/TabItem";
+
+## Descripter
+
+
+
+Descripter
+
+<details style={{"marginBottom":"1rem"}} data-collapsed={false} open={true}><summary style={{}}><strong>Header Parameters</strong></summary><div><ul><ParamsItem className={"paramsItem"} param={{"name":"Authorization","in":"header","required":false,"schema":{"type":"string","default":"Bearer {token}"}}}></ParamsItem></ul></div></details><MimeTabs><TabItem label={"application/json"} value={"application/json-schema"}><details style={{}} data-collapsed={false} open={true}><summary style={{"textAlign":"left"}}><strong>Request Body</strong><strong style={{"fontSize":"var(--ifm-code-font-size)","color":"var(--openapi-required)"}}> required</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><SchemaItem collapsible={false} name={"data"} required={true} schemaDescription={undefined} schemaName={"string"} qualifierMessage={undefined} defaultValue={undefined}></SchemaItem></ul></details></TabItem></MimeTabs><div><ApiTabs><TabItem label={"200"} value={"200"}><div></div><details style={{"textAlign":"left","marginBottom":"1rem"}} data-collaposed={true} open={false}><summary style={{}}><strong>Response Headers</strong></summary><ul style={{"marginLeft":"1rem"}}></ul></details><div></div></TabItem></ApiTabs></div>
+      

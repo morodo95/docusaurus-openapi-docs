@@ -25,14 +25,6 @@ const sidebars = {
       type: "doc",
       id: "intro",
     },
-    {
-      type: "doc",
-      id: "sidebars",
-    },
-    {
-      type: "doc",
-      id: "versioning",
-    },
   ],
   petstore: [
     {
@@ -47,16 +39,7 @@ const sidebars = {
       },
       items: require("./docs/petstore/sidebar.js"),
     },
-    {
-      type: "category",
-      label: "Cloud Object Storage",
-      link: {
-        type: "generated-index",
-        title: "Cloud Object Storage API",
-        slug: "/category/cos-api",
-      },
-      items: require("./docs/cos/sidebar.js"),
-    },
+
     {
       type: "category",
       label: "Burgers",

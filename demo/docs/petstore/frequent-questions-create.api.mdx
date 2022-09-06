@@ -1,0 +1,30 @@
+---
+id: frequent-questions-create
+sidebar_label: Frequent Questions Create
+hide_title: true
+hide_table_of_contents: true
+api: {"description":"TYPE:\nUSER\nADMIN\nBUSINESS","tags":["Frequent Questions"],"operationId":"FrequentQuestionsCreate","deprecated":false,"parameters":[{"name":"Authorization","in":"header","required":false,"schema":{"type":"string","default":"Bearer {token}"}}],"requestBody":{"content":{"application/json":{"schema":{"title":"FrequentQuestionsCreateRequest","example":{"type":"User","question":"PREUNGA","response":" RESPUESTA","order":"1"},"type":"object","properties":{"type":{"type":"string"},"question":{"type":"string"},"response":{"type":"string"},"order":{"type":"string"}},"required":["type","question","response","order"]}}},"required":true},"responses":{"200":{"description":"","headers":{}}},"method":"post","path":"/api/quest/create","servers":[{"url":"http://localhost:8085/api/cards/update"}],"jsonRequestBodyExample":{"type":"User","question":"PREUNGA","response":" RESPUESTA","order":"1"},"info":{"version":"1.0","title":"U-Pay AMOL","contact":{}},"postman":{"name":"Frequent Questions Create","description":{"content":"TYPE:\nUSER\nADMIN\nBUSINESS","type":"text/plain"},"url":{"path":["api","quest","create"],"host":["{{baseUrl}}"],"query":[],"variable":[]},"header":[{"key":"Content-Type","value":"application/json"}],"method":"POST","body":{"mode":"raw","raw":"\"\"","options":{"raw":{"language":"json"}}}}}
+sidebar_class_name: "post api-method"
+info_path: petstore/u-pay-amol
+custom_edit_url: "https://github.com/PaloAltoNetworks/docusaurus-openapi-docs/issues/new?labels=documentation&template=documentation_problem.md&title=[Documentation] Requesting changes to 'Frequent Questions Create' (frequent-questions-create)"
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem"
+import SchemaTabs from "@theme/SchemaTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import TabItem from "@theme/TabItem";
+
+## Frequent Questions Create
+
+
+
+TYPE:
+USER
+ADMIN
+BUSINESS
+
+<details style={{"marginBottom":"1rem"}} data-collapsed={false} open={true}><summary style={{}}><strong>Header Parameters</strong></summary><div><ul><ParamsItem className={"paramsItem"} param={{"name":"Authorization","in":"header","required":false,"schema":{"type":"string","default":"Bearer {token}"}}}></ParamsItem></ul></div></details><MimeTabs><TabItem label={"application/json"} value={"application/json-schema"}><details style={{}} data-collapsed={false} open={true}><summary style={{"textAlign":"left"}}><strong>Request Body</strong><strong style={{"fontSize":"var(--ifm-code-font-size)","color":"var(--openapi-required)"}}> required</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><SchemaItem collapsible={false} name={"type"} required={true} schemaDescription={undefined} schemaName={"string"} qualifierMessage={undefined} defaultValue={undefined}></SchemaItem><SchemaItem collapsible={false} name={"question"} required={true} schemaDescription={undefined} schemaName={"string"} qualifierMessage={undefined} defaultValue={undefined}></SchemaItem><SchemaItem collapsible={false} name={"response"} required={true} schemaDescription={undefined} schemaName={"string"} qualifierMessage={undefined} defaultValue={undefined}></SchemaItem><SchemaItem collapsible={false} name={"order"} required={true} schemaDescription={undefined} schemaName={"string"} qualifierMessage={undefined} defaultValue={undefined}></SchemaItem></ul></details></TabItem></MimeTabs><div><ApiTabs><TabItem label={"200"} value={"200"}><div></div><details style={{"textAlign":"left","marginBottom":"1rem"}} data-collaposed={true} open={false}><summary style={{}}><strong>Response Headers</strong></summary><ul style={{"marginLeft":"1rem"}}></ul></details><div></div></TabItem></ApiTabs></div>
